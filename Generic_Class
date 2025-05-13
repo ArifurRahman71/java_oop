@@ -1,0 +1,28 @@
+public class genericClassDemo<T> {
+    private T t;
+    public void add(T t)
+    {
+        this.t=t;
+    }
+    public T get()
+    {
+        return t;
+    }
+    
+    public static void main(String[] args) {
+
+
+    genericClassDemo<Integer>intergerbox=new genericClassDemo<Integer>();
+    genericClassDemo<String>stringbox=new  genericClassDemo<String>();
+
+    intergerbox.add(10);
+    stringbox.add("Dipu");
+    System.out.println(intergerbox.get());
+    System.out.println(stringbox.get());
+
+
+}
+
+}
+
+
