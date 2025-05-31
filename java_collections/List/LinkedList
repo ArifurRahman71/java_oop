@@ -1,0 +1,24 @@
+package cse.edu.bd.bubt;
+
+import java.util.*;
+
+public class SimpleLinkedList {
+    public static void main(String[] args) {
+        // LinkedList তৈরি
+        LinkedList<String> names = new LinkedList<>();
+
+        // উপাদান যোগ করা
+        names.add("Rahim");
+        names.add("Karim");
+        names.add("Fatima");
+
+        // তালিকা দেখানো
+        System.out.println("Names List: " + names);
+
+        // একটি উপাদান মোছা
+        names.remove("Karim");
+
+        // হালনাগাদ তালিকা দেখানো
+        System.out.println("Updated List: " + names);
+    }
+}
