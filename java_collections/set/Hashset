@@ -1,0 +1,16 @@
+package cse.edu.bd.bubt;
+import java.util.*;
+public class HashSetExample {
+    public static void main(String[] args) {
+        HashSet<String> names = new HashSet<>();
+
+        names.add("Rahim");
+        names.add("Karim");
+        names.add("Rahim"); // ডুপ্লিকেট যোগ করা হলেও যুক্ত হবে না
+
+        System.out.println("Names in set:");
+        for (String name : names) {
+            System.out.println(name);
+        }
+    }
+}
