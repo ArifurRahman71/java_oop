@@ -1,0 +1,32 @@
+package cse.edu.bd.bubt;
+import java.util.*;
+public class QueueExample {
+    public static void main(String[] args) {
+        // Queue তৈরি
+        Queue<String> line = new LinkedList<>();
+
+        // উপাদান যোগ (enqueue)
+        line.add("Rahim");
+        line.add("Karim");
+        line.add("Fatima");
+
+        // সামনে কে আছে (peek)
+        System.out.println("সবার আগে: " + line.peek());
+
+        //another way to print
+//        for(String name:line){
+//            System.out.println(name);
+//        }
+
+        System.out.println(line.poll());
+
+        //  প্রথম জনকে সার্ভ করা
+        line.poll();
+
+        // হালনাগাদ Queue
+        System.out.println("বাকি লাইন: " + line);
+
+        System.out.println(line.isEmpty());
+
+    }
+}
