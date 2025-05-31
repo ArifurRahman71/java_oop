@@ -1,0 +1,21 @@
+package cse.edu.bd.bubt;
+import java.util.*;
+public class HasMapExample {
+    public static void main(String[] args) {
+        // Map তৈরি: Integer -> String
+        HashMap<Integer, String> studentMap = new HashMap<>();
+
+        // মান যোগ করা
+        studentMap.put(101, "Rahim");
+        studentMap.put(102, "Karim");
+        studentMap.put(103, "Fatima");
+
+        // নির্দিষ্ট রোল নম্বর দিয়ে নাম বের করা
+        System.out.println("Roll 102: " + studentMap.get(102));
+
+        // সব student দেখানো
+        for (Integer roll : studentMap.keySet()) {
+            System.out.println("Roll: " + roll + ", Name: " + studentMap.get(roll));
+        }
+    }
+}
