@@ -1,0 +1,18 @@
+package cse.edu.bd.bubt;
+import java.util.*;
+public class TreeMapExample {
+    public static void main(String[] args) {
+        TreeMap<Integer, String> map = new TreeMap<>();
+
+        map.put(3, "Three");
+        map.put(1, "One");
+        map.put(2, "Two");
+
+        System.out.println(map);
+
+        for(Integer roll:map.keySet())
+        {
+            System.out.println("roll: "+roll +",Name : "+map.get(roll));
+        }
+    }
+}
